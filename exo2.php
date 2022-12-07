@@ -41,16 +41,7 @@
             echo "<th>".$Lucas[$i]."</th>";
         }
         echo "</tr>";
-
-        
     ?>
-    
-
-    
-    
 </table>
-
-
-
 </body>
 </html>
