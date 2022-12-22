@@ -17,7 +17,7 @@
         session_unset();
         session_destroy();
     }
-    if (isset($_POST["Enter"]) && $_POST["MDP"] == "1234" && $_POST["login"] == "julien") {
+    if (isset($_POST["Enter"]) && $_POST["MDP"] == "1234" && $_POST["login"] == "Julien") {
         /*Si on a appuyé sur le bouton valider, que l'indentifiant est "Julien" et que le mot de passe est "1234", 
                 alors nous somme identifiés. On le met dans la variable "EtatConnexion" qu'on met à "true", soit vraie. */
         $_SESSION["EtatConnexion"] = true;
@@ -44,7 +44,7 @@
 
     if (isset($_POST["Enter"])) //Si on appuie sur le bouton "Valider", et que soit le l'identifiant, soit le mot de passe est faux, on affiche les messages d'erreur.
     {
-        if ($_POST["login"] != "julien") {
+        if ($_POST["login"] != "Julien") {
             echo "<p>Ce n'est pas le bon Login !</p>";
         }
         if ($_POST["MDP"] != "1234") {
